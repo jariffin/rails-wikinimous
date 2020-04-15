@@ -1,0 +1,17 @@
+<div class="container mx-200">
+<!--   ::before -->
+  <div class="row">
+<!--     ::before -->
+    <div class="col-sm-8 col-sm-offset-2">
+      <p><% @articles.each do |article| %></p>
+        <h2><%= link_to article.title, article_path(article) %></h2>
+        <p><%= article.content %></p>
+      <% end %>
+      <hr>
+    <%= link_to "Submit new article", new_article_path %>
+    </div>
+<!--     ::after -->
+  </div>
+<!--   ::after -->
+</div>
+

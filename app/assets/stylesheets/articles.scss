@@ -1,0 +1,22 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+i {
+  size: 200px;
+}
+
+.navbar {
+  height: 50px;
+  background-color: gray;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}

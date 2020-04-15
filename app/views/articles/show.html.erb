@@ -1,0 +1,17 @@
+<div class="container m-3">
+
+  <div class="row">
+    <h3><%= @article.title %> </h3>
+      <%= link_to edit_article_path do %>
+      <i class="fa fa-pencil mx-2 fa-lg my-0"></i>
+      <% end %>
+      <%= link_to article_path(@article),
+          method: :delete,
+          data: { confirm: "Are you sure?"} do %>
+            <i class="fa fa-trash-o fa-lg"></i>
+            <% end %>
+  </div>
+  <hr>
+  <p><%= @article.content %></p>
+
+</div>
